@@ -6,10 +6,13 @@ cache:
 install:
   - pip install ghp-import
   - pip install flask
-  - pip install flask-frozen
+  - pip install Frozen-Flask
 before script:
   - git config --global user.email 'your@email.com'
-  - git config --global user.username 'username'
+  - git config --global user.username '5j4'
   - git remote rm origin
-  - git remote add origin http://user:${GH_TOKEN}@github.com/user/repo.git
-script: echo 'test'
+  - git remote add origin http://user:${GHP_TOKEN}@github.com/user/travis-deploy-demo.git
+script: 
+  - echo 'test'
+  - ghp-import -m "Build static site" build
+  # - git push origin ${GITHUB_PAGES_BRANCH}
