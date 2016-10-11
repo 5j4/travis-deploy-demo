@@ -17,4 +17,5 @@ script:
   - echo 'test'
   - lektor build -O build
   - ghp-import -m "Build static site" build
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/travis-deploy-demo.git" master:gh-pages > dev/null 2>&1
   # - git push origin ${GITHUB_PAGES_BRANCH}
