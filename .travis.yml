@@ -14,7 +14,7 @@ before script:
   - git remote rm origin
   - git remote add origin http://user:${GHP_TOKEN}@github.com/user/travis-deploy-demo.git
 script: 
-  - @echo 'test'
+  - echo 'test'
   - lektor build -O build
   - ghp-import -m "Build static site" build
   # - git push origin ${GITHUB_PAGES_BRANCH}
