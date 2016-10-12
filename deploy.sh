@@ -12,11 +12,11 @@ rev=$(git rev-parse --short HEAD)
 
 cd build
 
-git remote add origin "https://${GHP_TOKEN}@github.com/5j4/travis-deploy-demo.git"
+git remote add origin "https://${GHP_TOKEN}@github.com/${GHP_USERNAME}/travis-deploy-demo.git"
 git fetch origin
 git reset origin/gh-pages
 
-# echo "rustbyexample.com" > CNAME
+# echo "example.com" > CNAME
 
 touch .
 
