@@ -7,7 +7,6 @@ install:
   - pip install Frozen-Flask
   - pip install Lektor
 script: 
-  - echo 'test'
   - lektor build -O build
   - ghp-import -m "Build static site" build
 after_success:
