@@ -1,13 +1,18 @@
 language: python
 python: 2.7
-cache: pip
 install:
-  - pip install ghp-import
-  - pip install flask
-  - pip install Frozen-Flask
-  - pip install Lektor
+  - pip install -r requirements.txt
+before_script:
+  - git init
+  - git config --global user.email "5j4@users.noreply.github.com"
+  - git config --global user.name "5j4"
 script: 
   - lektor build -O build
   - ghp-import -m "Build static site" build
 after_success:
   - bash deploy.sh
+cache:
+  - apt
+  - pip
+notification:
+  - email: false
