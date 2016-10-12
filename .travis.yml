@@ -18,5 +18,5 @@ script:
   - lektor build -O build
   - ghp-import -m "Build static site" build
   - git branch
-  - git push -fq "https://${GH_TOKEN}@github.com/travis-deploy-demo.git" master:gh-pages > /dev/null 2>&1
+  - git push -fq "https://${GH_TOKEN}@github.com/travis-deploy-demo.git" gh-pages:gh-pages > /dev/null 2>&1
   # - git push origin ${GITHUB_PAGES_BRANCH}
