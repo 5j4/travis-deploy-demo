@@ -16,7 +16,7 @@ pwd
 
 git init
 git config user.name "5j4"
-git config user.email "a@b.com"
+git config user.email "5j4@users.noreply.github.com"
 
 git remote add upstream "https://${GHP_TOKEN}@github.com/5j4/travis-deploy-demo.git"
 git fetch upstream
