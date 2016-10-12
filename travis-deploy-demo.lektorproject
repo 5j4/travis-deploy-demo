@@ -1,5 +1,0 @@
-[project]
-name = travis-deploy-demo
-
-[servers.ghpages]
-target = ghpages+https://5j4/travis-deploy-demo
