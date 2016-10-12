@@ -10,7 +10,9 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
+echo pwd
 cd build
+echo pwd
 
 git init
 git config user.name "5j4"
