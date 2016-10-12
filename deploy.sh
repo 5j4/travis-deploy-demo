@@ -10,15 +10,15 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-echo pwd
+pwd
 cd build
-echo pwd
+pwd
 
 git init
 git config user.name "5j4"
 git config user.email "a@b.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/5j4/travis-deploy-demo.git"
+git remote add upstream "https://${GHP_TOKEN}@github.com/5j4/travis-deploy-demo.git"
 git fetch upstream
 git reset upstream/gh-pages
 
