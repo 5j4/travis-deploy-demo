@@ -2,3 +2,4 @@ ghp-import
 flask
 Frozen-Flask
 Lektor
+nose
