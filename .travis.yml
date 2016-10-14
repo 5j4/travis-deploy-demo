@@ -15,4 +15,4 @@ cache:
   - apt
   - pip
 notification:
-  - email: 5j4@users.noreply.github.com
+  - email: false
